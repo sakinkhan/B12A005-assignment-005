@@ -20,7 +20,7 @@
             <h2 class="hind-madurai-extrabold font-black text-[20px] md:text-[25px] text-[#006747] leading-none">Emergency<br>Service</h2>
         </div>
         <div class="right flex gap-[20px] justify-center">
-            <div class="heart flex items-center justify-center md:justify-start gap-[10px] bg-[#41FF6B]/10 w-[110px] h-[40px] md:w-[123px] md:h-[52px] rounded-[50px]">
+            <div class="heart flex items-center justify-center gap-[10px] bg-[#41FF6B]/10 w-[110px] h-[40px] md:w-[123px] md:h-[52px] rounded-[50px]">
                 <p class="inter-font font-black text-[15px] md:text-[16px]">0</p>
                 <img src="./assets/heart.png" alt="heart" class="w-[20px] h-[20px] md:w-[25px] md:h-[25px]">
             </div>
@@ -42,13 +42,13 @@
         </p>
     </section>
     <!-- Hotlines and Call History section -->
-    <section class="bg-[#f5fff6] px-[60px]">
-        <div class="hotline-cards pt-12 grid grid-cols-1 md:grid-cols-3 gap-[30px] place-items-center items-stretch">
+    <section class="bg-[#f5fff6] px-[60px] flex flex-col md:flex-row items-center md:items-start gap-[30px]">
+        <div class="hotline-cards pt-12 grid grid-cols-1 md:grid-cols-3 gap-[30px] place-items-center items-stretch max-w-[1370px]">
             <!-- National Emergency Card -->
             <div class="national-emergency-number bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="emergency" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">National Emergency Number</h2>
@@ -56,14 +56,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">999</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">All</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -71,7 +78,7 @@
             <div class="police-helpline-number bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/police.png" alt="police" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#DFEFFF] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Police Helpline Number</h2>
@@ -79,14 +86,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">999</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Police</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -94,7 +108,7 @@
             <div class="fire-service-number bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/fire-service.png" alt="fire-service" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Fire Service Number</h2>
@@ -102,14 +116,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">999</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Fire</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -117,7 +138,7 @@
             <div class="ambulance-service bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/ambulance.png" alt="ambulance" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Ambulance Service</h2>
@@ -125,14 +146,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">1994-999999</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Health</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -140,7 +168,7 @@
             <div class="woman-child-helpline bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="emergency" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Women & Child Helpline</h2>
@@ -148,14 +176,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">109</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Help</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -163,7 +198,7 @@
             <div class="anti-corruption-helpline bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="emergency" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Anti-Corruption Helpline</h2>
@@ -171,14 +206,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">106</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Govt.</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -186,7 +228,7 @@
             <div class="electricity-helpline bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/emergency.png" alt="emergency" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#FFE3E2] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Electricity Helpline</h2>
@@ -194,14 +236,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">16216</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Electricity</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -209,7 +258,7 @@
             <div class="brac-helpline bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/brac.png" alt="brac" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#DFEFFF] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">BRAC Helpline</h2>
@@ -217,14 +266,21 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">16445</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">NGO</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
@@ -232,7 +288,7 @@
             <div class="railway-helpline bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
                     <img src="./assets/Bangladesh-Railway.png" alt="Bangladesh-Railway" class="w-[55px] h-[55px] md:w-[60px] md:h-[60px] border-0 bg-[#DFEFFF] rounded-[16px] p-[14px]">
-                    <i class="fa-regular fa-heart text-[18px] md:text-[20px]"></i>
+                    <i class="fa-regular fa-heart text-[18px] md:text-[20px] hover:scale-120 duration-300 cursor-pointer"></i>
                 </div>
                 <div>
                     <h2 class="hind-madurai-bold text-[20px] md:text-[24px] mt-4">Bangladesh Railway Helpline</h2>
@@ -240,21 +296,63 @@
                     <h1 class="hind-madurai-bold text-[28px] md:text-[32px] mt-6">163</h1>
                     <p class="hind-madurai-regular text-[#5C5C5C] text-[16px] text-center md:text-[18px] bg-[#f2f2f2] rounded-[9999px] w-fit h-[37px] px-[16px] py-[6px]">Travel</p>
                 </div>
+                <!-- buttons -->
                 <div class="flex items-center justify-center gap-[8px] mt-6">
-                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
+                    <button class="flex items-center justify-center bg-white border-1 border-[#D4D6D5] 
+                    hover:bg-[#00A63E] hover:text-white duration-300
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
                         <i class="fa-regular fa-copy"></i>
                         <p class="hind-madurai-regular text-[16px] md:text-[18px]">Copy</p>
                     </button>
-                    <button class="flex items-center justify-center bg-[#00A63E] border-1 border-[#D4D6D5] gap-[6px] w-[183px] h-[40px] rounded-[8px]">
-                        <i class="fa-solid fa-phone text-white"></i>
-                        <p class="text-white hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
+                    <button class="flex items-center justify-center 
+                    bg-[#00A63E] border-1 border-[#D4D6D5] 
+                    hover:bg-white text-white hover:text-black duration-300 
+                    hover:border-1 hover:border-[#D4D6D5]
+                    gap-[6px] w-[183px] h-[40px] rounded-[8px] cursor-pointer">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="hind-madurai-regular text-[16px] md:text-[18px]">Call</p>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="call-history">
-
+        <div class="call-history bg-white rounded-[8px] shadow-lg w-full max-w-[432px] md:max-w-[400px] p-6 mt-12">
+            <!-- Top -->
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-[8px]">
+                    <i class="fa-regular fa-clock text-[20px]"></i>
+                    <p class="hind-madurai-medium text-[20px] text-black">Call History</p>
+                </div>
+                <button class="hind-madurai-medium text-[18px] px-[36px] py-[12px] 
+                bg-[#00A63E] hover:bg-white text-white hover:text-black duration-300 
+                hover:border-1 hover:border-[#D4D6D5] cursor-pointer rounded-[50px] max-h-[50px]">
+                    Clear
+                </button>
+            </div>
+            <!-- list items -->
+            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div>
+                    <p class="inter-font font-semibold text-[18px] ">Fire Service Number</p>
+                    <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">999</p>
+                </div>
+                <p class="hind-madurai-regular text-[18px]">11:36:58 AM</p>
+            </div>
+            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div>
+                    <p class="inter-font font-semibold text-[18px] ">National Emergency Number</p>
+                    <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">1994-999999</p>
+                </div>
+                <p class="hind-madurai-regular text-[18px]">11:36:58 AM</p>
+            </div>
+            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div>
+                    <p class="inter-font font-semibold text-[18px] ">Bangladesh Railway Helpline </p>
+                    <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">999</p>
+                </div>
+                <p class="hind-madurai-regular text-[18px]">11:36:58 AM</p>
+            </div>
         </div>
     </section>
+    <!-- Linking JavaScript -->
+    <script src="./script.js"></script>
 </body>
 </html>
