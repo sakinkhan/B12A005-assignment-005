@@ -43,7 +43,7 @@
     </section>
     <!-- Hotlines and Call History section -->
     <section class="bg-[#f5fff6] px-[60px] flex flex-col md:flex-row items-center md:items-start gap-[30px]">
-        <div class="hotline-cards pt-12 grid grid-cols-1 md:grid-cols-3 gap-[30px] place-items-center items-stretch max-w-[1370px]">
+        <div class="hotline-cards pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] place-items-center items-stretch max-w-[1370px]">
             <!-- National Emergency Card -->
             <div class="national-emergency-number bg-white rounded-[12px] w-full max-w-[432px] h-full p-8 shadow-lg">
                 <div class="flex items-center justify-between">
@@ -315,12 +315,12 @@
                 </div>
             </div>
         </div>
-        <div class="call-history bg-white rounded-[8px] shadow-lg w-full max-w-[432px] md:max-w-[400px] p-6 mt-12">
-            <!-- Top -->
-            <div class="flex items-center justify-between mb-4">
+        <div class="call-history bg-white rounded-[12px] shadow-lg w-full max-w-[432px] md:max-w-[200px] lg:max-w-[400px] p-6 mt-12">
+            <!-- title and clear button -->
+            <div class="flex flex-col gap-3 lg:flex-row items-center justify-between mb-4 sm:mt-3">
                 <div class="flex items-center gap-[8px]">
-                    <i class="fa-regular fa-clock text-[20px]"></i>
-                    <p class="hind-madurai-medium text-[20px] text-black">Call History</p>
+                    <i class="fa-regular fa-clock text-[20px] sm:text-[22px]"></i>
+                    <p class="hind-madurai-medium text-[20px] sm:text-[22px] text-black">Call History</p>
                 </div>
                 <button class="hind-madurai-medium text-[18px] px-[36px] py-[12px] 
                 bg-[#00A63E] hover:bg-white text-white hover:text-black duration-300 
@@ -329,22 +329,22 @@
                 </button>
             </div>
             <!-- list items -->
-            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
-                <div>
+            <div class="flex flex-row md:flex-col lg:flex-row md:gap-5 items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div class="md:text-center">
                     <p class="inter-font font-semibold text-[18px] ">Fire Service Number</p>
                     <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">999</p>
                 </div>
                 <p class="hind-madurai-regular text-[18px]">11:36:58 AM</p>
             </div>
-            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
-                <div>
+            <div class="flex flex-row md:flex-col lg:flex-row md:gap-5 items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div class="md:text-center">
                     <p class="inter-font font-semibold text-[18px] ">National Emergency Number</p>
                     <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">1994-999999</p>
                 </div>
                 <p class="hind-madurai-regular text-[18px]">11:36:58 AM</p>
             </div>
-            <div class="flex items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
-                <div>
+            <div class="flex flex-row md:flex-col lg:flex-row md:gap-5 items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+                <div class="md:text-center">
                     <p class="inter-font font-semibold text-[18px] ">Bangladesh Railway Helpline </p>
                     <p class="hind-madurai-regular text-[18px] text-[#5C5C5C]">999</p>
                 </div>
