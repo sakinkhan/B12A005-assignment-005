@@ -9,7 +9,7 @@ for (let i = 0; i < callButtons.length; i++) {
     const name = serviceNames[i].innerText;
     const number = serviceNumbers[i].innerText;
     if (coinCount >= 20) {
-      alert(`📞 Calling ${name} ${number}...`);
+      alert(`📞 Calling ${name}: ${number}...`);
 
       const updatedCoinCount = coinCount - 20;
       document.getElementById("coin-count").innerText = updatedCoinCount;
