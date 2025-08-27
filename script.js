@@ -35,7 +35,7 @@ for (let i = 0; i < callButtons.length; i++) {
     );
     const listItem = document.createElement("div");
     listItem.innerHTML = `
-          <div class="flex flex-row md:flex-col lg:flex-row md:gap-4 items-center justify-between bg-[#FAFAFA] rounded-[12px] p-4 my-2">
+          <div class="flex flex-row md:flex-col lg:flex-row md:gap-4 items-center justify-between bg-[#f2f2f2] rounded-[12px] p-4 my-2">
               <div class="sm:text-start md:text-center lg:text-start">
                   <p class="inter-font font-semibold text-[16px] ">${name}</p>
                   <p class="hind-madurai-regular text-[16px] text-[#5C5C5C]">${number}</p>
