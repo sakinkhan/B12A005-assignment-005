@@ -59,7 +59,6 @@ for (let heart of heartElements) {
     const heartCount = parseInt(
       document.getElementById("heart-count").innerText
     );
-    console.log(heartCount);
     const updatedHeartCount = heartCount + 1;
     document.getElementById("heart-count").innerText = updatedHeartCount;
   });
@@ -67,8 +66,6 @@ for (let heart of heartElements) {
 
 // Calculating copy and alerting number
 const copyButtons = document.getElementsByClassName("copy-btn");
-console.log(copyButtons.length);
-
 for (let i = 0; i < copyButtons.length; i++) {
   copyButtons[i].addEventListener("click", function () {
     const number = serviceNumbers[i].innerText;
@@ -78,7 +75,7 @@ for (let i = 0; i < copyButtons.length; i++) {
 
     // copy the number to clipboard
     navigator.clipboard.writeText(number);
-    alert(`The number has been copied: ${number}`);
+    alert(`📋 The number has been copied: ${number}`);
     return;
   });
 }
